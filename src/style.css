@@ -1,0 +1,299 @@
+#nft-card { 
+	background-color:rgba(255, 255, 255, 1);
+	opacity:1;
+	width:297px;
+	height:420px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	position:absolute;
+}
+#background-gradient { 
+	background-image:linear-gradient(0deg, rgba(255, 32.00000189244747, 110.00000104308128, 1) 0%,rgba(32.00000189244747, 255, 177.0000046491623, 1) 100%) ;
+	opacity:1;
+	width:297px;
+	height:321px;
+	position:absolute;
+	left:0px;
+	top:99px;
+}
+#background-overlay { 
+	background-color:rgba(22.000000588595867, 22.000000588595867, 21.000000648200512, 1);
+	opacity:0.8799999952316284;
+	width:277px;
+	height:343px;
+	position:absolute;
+	left:10px;
+	top:67px;
+	border-top-left-radius:7px;
+	border-top-right-radius:7px;
+	border-bottom-left-radius:7px;
+	border-bottom-right-radius:7px;
+}
+#koios-parrot-img { 
+	opacity:1;
+	width:125.00001525878906px;
+	height:125px;
+	position:absolute;
+	left:17px;
+	top:5px;
+}
+
+#card-name { 
+	color:rgba(255, 255, 255, 1);
+	opacity:1;
+	width:255px;
+	height:36px;
+	position:absolute;
+	left:21px;
+	top:142px;
+	font-family: "Press Start 2P";
+	text-align:left;
+	font-size:18px;
+	letter-spacing:0;
+}
+#card-attributes { 
+	opacity:1;
+	width:252px;
+	height:178px;
+	position:absolute;
+	left:24px;
+	top:215px;
+}
+#health { 
+	opacity:1;
+	width:222px;
+	height:24px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+#heart-icon { 
+	width:24px;
+	height:24px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:"Press Start 2P";
+	font-size:24px;
+}
+#health-text { 
+	color:rgba(255, 255, 255, 1);
+	opacity:1;
+	width:48px;
+	height:24px;
+	position:absolute;
+	left:39px;
+	top:0px;
+	font-family:"Press Start 2P";
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+}
+#health-description { 
+	color:rgba(255, 255, 255, 1);
+	opacity:0.6000000238418579;
+	width:120px;
+	height:10px;
+	position:absolute;
+	left:102px;
+	top:7px;
+	font-family:"Press Start 2P";
+	text-align:left;
+	font-size:10px;
+	letter-spacing:0;
+}
+#inspiring { 
+	opacity:1;
+	width:242px;
+	height:24px;
+	position:absolute;
+	left:0px;
+	top:38.5px;
+}
+#inspiring-icon { 
+	width:24px;
+	height:24px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:"Press Start 2P";
+	font-size:24px;
+}
+#inspiring-text { 
+	color:rgba(255, 255, 255, 1);
+	opacity:1;
+	width:48px;
+	height:24px;
+	position:absolute;
+	left:39px;
+	top:0px;
+	font-family:"Press Start 2P";
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+}
+#inspiring-description { 
+	color:rgba(255, 255, 255, 1);
+	opacity:0.6000000238418579;
+	width:120px;
+	height:10px;
+	position:absolute;
+	left:102px;
+	top:7px;
+	font-family:"Press Start 2P";
+	text-align:left;
+	font-size:10px;
+	letter-spacing:0;
+}
+#pro-hodler { 
+	opacity:1;
+	width:202px;
+	height:24px;
+	position:absolute;
+	left:0px;
+	top:77px;
+}
+#pro-hodler-icon { 
+	width:24px;
+	height:24px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:"Press Start 2P";
+	font-size:24px;
+}
+#pro-hodler-text { 
+	color:rgba(255, 255, 255, 1);
+	opacity:1;
+	width:48px;
+	height:24px;
+	position:absolute;
+	left:39px;
+	top:0px;
+	font-family:"Press Start 2P";
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+}
+#pro-hodler-description { 
+	color:rgba(255, 255, 255, 1);
+	opacity:0.6000000238418579;
+	width:120px;
+	height:10px;
+	position:absolute;
+	left:102px;
+	top:7px;
+	font-family:"Press Start 2P";
+	text-align:left;
+	font-size:10px;
+	letter-spacing:0;
+}
+#friendly-bird { 
+	opacity:1;
+	width:252px;
+	height:24px;
+	position:absolute;
+	left:0px;
+	top:115.5px;
+}
+#friendly-bird-icon { 
+	width:24px;
+	height:24px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:"Press Start 2P";
+	font-size:24px;
+}
+#friendly-bird-text { 
+	color:rgba(255, 255, 255, 1);
+	opacity:1;
+	width:48px;
+	height:24px;
+	position:absolute;
+	left:39px;
+	top:0px;
+	font-family:"Press Start 2P";
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+}
+#friendly-bird-description { 
+	color:rgba(255, 255, 255, 1);
+	opacity:0.6000000238418579;
+	width:120px;
+	height:10px;
+	position:absolute;
+	left:102px;
+	top:7px;
+	font-family:"Press Start 2P";
+	text-align:left;
+	font-size:10px;
+	letter-spacing:0;
+}
+#education { 
+	opacity:1;
+	width:192px;
+	height:24px;
+	position:absolute;
+	left:0px;
+	top:154px;
+}
+#education-icon { 
+	width:24px;
+	height:24px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:"Press Start 2P";
+	font-size:24px;
+}
+#education-text { 
+	color:rgba(255, 255, 255, 1);
+	opacity:1;
+	width:48px;
+	height:24px;
+	position:absolute;
+	left:39px;
+	top:0px;
+	font-family:"Press Start 2P";
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+}
+#education-description { 
+	color:rgba(255, 255, 255, 1);
+	opacity:0.6000000238418579;
+	width:120px;
+	height:10px;
+	position:absolute;
+	left:102px;
+	top:7px;
+	font-family:"Press Start 2P";
+	text-align:left;
+	font-size:10px;
+	letter-spacing:0;
+}
+#card-number { 
+	opacity:1;
+	width:28px;
+	height:14px;
+	position:absolute;
+	left:257px;
+	top:27px;
+}
+#card-number-styling { 
+    color:rgb(248, 218, 46);
+	opacity:1;
+	width:28px;
+	height:14px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:"Press Start 2P";
+	text-align:right;
+	font-size:14px;
+	letter-spacing:0;
+}
