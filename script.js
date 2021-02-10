@@ -24,7 +24,7 @@ function generateCard() {
 }
 
 function generateMagnifico() {
-    cardimage.src="../assets/magnifico.png";
+    cardimage.src="assets/magnifico.png";
     cardname.innerHTML = "el magnifico";
     cardnumber.innerHTML = "00";
     health.innerHTML = 9000;
@@ -35,7 +35,7 @@ function generateMagnifico() {
 }
 
 function generateBlackbird() {
-    cardimage.src="../assets/blackbird.png";
+    cardimage.src="assets/blackbird.png";
     cardname.innerHTML = "the blackbird";
     cardnumber.innerHTML = "01";
     generateAttributes();
