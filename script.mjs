@@ -11,6 +11,15 @@ var proHodler = document.getElementById("pro-hodler-text");
 var friendlyBird = document.getElementById("friendly-bird-text");
 var education = document.getElementById("education-text");
 
+var style = {
+    transform: 'scale(1)',
+    top: 0,
+    left: 0,
+    margin: 0,
+    width: '297px',
+    height: '420px',
+  };
+
 function generateCard() {
     var rarity = Math.floor(Math.random() * 10000);
     console.log(rarity);
@@ -24,7 +33,7 @@ function generateCard() {
 }
 
 function generateMagnifico() {
-    cardimage.src="assets/magnifico.png";
+    cardimage.src = "assets/magnifico.png";
     cardname.innerHTML = "el magnifico";
     cardnumber.innerHTML = "00";
     health.innerHTML = 9000;
@@ -35,7 +44,7 @@ function generateMagnifico() {
 }
 
 function generateBlackbird() {
-    cardimage.src="assets/blackbird.png";
+    cardimage.src = "assets/blackbird.png";
     cardname.innerHTML = "the blackbird";
     cardnumber.innerHTML = "01";
     generateAttributes();
@@ -50,4 +59,42 @@ function generateAttributes() {
     proHodler.innerHTML = values[2];
     friendlyBird.innerHTML = values[3];
     education.innerHTML = values[4];
+}
+
+function exportPNG() {
+    var node = document.getElementById('nft-card');
+
+    domtoimage.toPng(node, {style: style, width:297, height: 420})
+        .then(function (dataUrl) {
+            var img = new Image();
+            img.src = dataUrl;
+            document.body.appendChild(img);
+        })
+        .catch(function (error) {
+            console.error('oops, something went wrong!', error);
+        });
+}
+
+function exportJPG() {
+    domtoimage.toJpeg(document.getElementById('nft-card'), {style: style, width:297, height: 420}, { quality: 0.95 })
+        .then(function (dataUrl) {
+            var link = document.createElement('a');
+            link.download = 'my-card.jpeg';
+            link.href = dataUrl;
+            link.click();
+        });
+}
+
+function exportSVG() {
+    function filter(node) {
+        return (node.tagName !== 'i');
+    }
+
+    domtoimage.toSvg(document.getElementById('nft-card'), {style: style, width:297, height: 420}, { filter: filter })
+        .then(function (dataUrl) {
+            var link = document.createElement('a');
+            link.download = 'my-card.svg';
+            link.href = dataUrl;
+            link.click();
+        });
 }

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Random Koios NFT</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex Mono&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start 2P&display=swap">
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -17,7 +16,7 @@
         <div id="background-gradient"></div>
         <div id="background-overlay"></div>
         <div id="koios-parrot-img">
-            <img id= "card-image" src="assets/default.png" alt="CardIcon">
+            <img id="card-image" src="assets/default.png" alt="CardIcon">
         </div>
 
         <span id="card-name">??</span>
@@ -33,13 +32,17 @@
             <div id="friendly-bird"><span id="friendly-bird-icon"><img src="assets/hands-icon.png"
                         alt="Friendly-bird"></span><span id="friendly-bird-text">??</span><span
                     id="friendly-bird-description">friendly bird</span></div>
-            <div id="education"><span id="education-icon"><img src="assets/book-icon.png"
-                        alt="Education"></span><span id="education-text">??</span><span
-                    id="education-description">education</span></div>
+            <div id="education"><span id="education-icon"><img src="assets/book-icon.png" alt="Education"></span><span
+                    id="education-text">??</span><span id="education-description">education</span></div>
         </div>
         <div id="card-number"><span id="card-number-styling">??</span></div>
     </div>
-    <script src="script.js"></script>
+
+    <div id="export-buttons"><span id="export-png"><button onclick="exportPNG()">export to PNG</button></span><span
+            id="export-jpg"><button onclick="exportJPG()">export to JPG</button></span><span id="export-svg"><button
+                onclick="exportSVG()">export to SVG</button></span></div>
+    <script src="script.mjs"></script>
+    <script src="dom-to-image.mjs" async></script>
 </body>
 
 </html>
