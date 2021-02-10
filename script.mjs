@@ -1,4 +1,5 @@
 var values = [];
+var lastCardUltraRare = false;
 
 var cardname = document.getElementById("card-name");
 var cardnumber = document.getElementById("card-number-styling");
@@ -36,14 +37,20 @@ function generateMagnifico() {
     cardimage.src = "assets/magnifico.png";
     cardname.innerHTML = "el magnifico";
     cardnumber.innerHTML = "00";
+    drawCard("Magnifico");
     health.innerHTML = 9000;
     inspiring.innerHTML = 9000;
     proHodler.innerHTML = 9000;
     friendlyBird.innerHTML = 9000;
     education.innerHTML = 9000;
+    lastCardUltraRare = true;
 }
 
 function generateBlackbird() {
+    if (lastCardUltraRare) {
+        drawCard("common");
+        lastCardUltraRare = false;
+    }
     cardimage.src = "assets/blackbird.png";
     cardname.innerHTML = "the blackbird";
     cardnumber.innerHTML = "01";
@@ -59,6 +66,23 @@ function generateAttributes() {
     proHodler.innerHTML = values[2];
     friendlyBird.innerHTML = values[3];
     education.innerHTML = values[4];
+}
+
+function drawCard(cardType) {
+    if (cardType === "Magnifico") {
+        document.getElementById("health-description").style.left = "140px";
+        document.getElementById("inspiring-description").style.left = "140px";
+        document.getElementById("pro-hodler-description").style.left = "140px";
+        document.getElementById("friendly-bird-description").style.left = "140px";
+        document.getElementById("education-description").style.left = "140px";
+    }
+    else {
+        document.getElementById("health-description").style.left = "102px";
+        document.getElementById("inspiring-description").style.left = "102px";
+        document.getElementById("pro-hodler-description").style.left = "102px";
+        document.getElementById("friendly-bird-description").style.left = "102px";
+        document.getElementById("education-description").style.left = "102px";
+    }
 }
 
 function exportPNG() {
